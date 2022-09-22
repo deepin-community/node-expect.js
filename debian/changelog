@@ -1,0 +1,35 @@
+node-expect.js (0.3.1+dfsg+~0.3.29-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 8 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers to use salsa repository.
+  * Apply multi-arch hints.
+    + libjs-expect.js, node-expect.js: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto install
+  * Fix mocha links
+  * Fix debian/watch (missing repacksuffix)
+  * Embed @types/expect.js and repack
+  * Enable upstream test using mocha
+  * Add a break against node-typescript-types < 20201105-1~
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Nov 2020 11:08:09 +0100
+
+node-expect.js (0.3.1+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #747422)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Fri, 09 May 2014 15:17:09 +0200

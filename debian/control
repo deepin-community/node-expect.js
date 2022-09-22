@@ -1,0 +1,49 @@
+Source: node-expect.js
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Leo Iannacone <l3on@ubuntu.com>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , uglifyjs
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-expect.js
+Vcs-Git: https://salsa.debian.org/js-team/node-expect.js.git
+Homepage: https://github.com/LearnBoost/expect.js
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-expect.js
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: mocha
+Multi-Arch: foreign
+Provides: ${nodejs:Provides}
+Breaks: node-typescript-types (<< 20201105-1~)
+Description: behavior driven test assertions - Node.js module
+ expect.js is a minimalistic behavior driven assertions toolkit similar
+ to should.js but with less footprint.
+ .
+ Some relevant features are:
+  * Cross-browser: works on IE6+, Firefox, Safari, Chrome, Opera.
+  * Compatible with all test frameworks.
+  * Standalone.
+  * No Object prototype extensions.
+ .
+ Node.js is an event-based server-side JavaScript engine.
+
+Package: libjs-expect.js
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: javascript-common
+Multi-Arch: foreign
+Description: behavior driven test assertions - JavaScript library
+ expect.js is a minimalistic behavior driven assertions toolkit similar
+ to should.js but with less footprint.
+ .
+ Some relevant features are:
+  * Cross-browser: works on IE6+, Firefox, Safari, Chrome, Opera.
+  * Compatible with all test frameworks.
+  * Standalone.
+  * No Object prototype extensions.

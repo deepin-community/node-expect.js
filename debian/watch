@@ -1,0 +1,6 @@
+version=4
+opts=dversionmangle=auto,repacksuffix=+dfsg,filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-expect.js-$1.tar.gz/ \
+ https://github.com/LearnBoost/expect.js/tags .*/archive/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-expectjs,pgpmode=none" \
+ https://registry.npmjs.org/@types/expect.js https://registry.npmjs.org/@types/expect.js/-/expect.js-([\d\.]+)@ARCHIVE_EXT@ group
